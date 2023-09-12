@@ -44,22 +44,26 @@ class _EditPageState extends State<EditPage> {
         title: Text("Edit CV"),
       ),
       body: Container(
+        height: MediaQuery.of(context).size.height,
         padding: EdgeInsets.all(20),
         child: SingleChildScrollView(
           child: Column(
+
             children: [
               TextFormField(
                 decoration: const InputDecoration(
-                  icon: Icon(Icons.person),
+                  icon: Icon(Icons.person,size: 40,),
                   labelText: 'Full Name',
+                  labelStyle: TextStyle(fontSize: 30)
                 ),
                 controller: nameController,
 
               ),
               TextFormField(
                 decoration: const InputDecoration(
-                  icon: Icon(Icons.person),
+                  icon: Icon(Icons.person, size: 40,),
                   labelText: 'Slack Username',
+                    labelStyle: TextStyle(fontSize: 30)
                 ),
 
                 controller: slackUsernamerController,
@@ -67,8 +71,9 @@ class _EditPageState extends State<EditPage> {
               ),
               TextFormField(
                 decoration: const InputDecoration(
-                  icon: Icon(Icons.person),
+                  icon: Icon(Icons.person, size: 40,),
                   labelText: 'Github handle',
+                    labelStyle: TextStyle(fontSize: 30)
                 ),
 
                 controller: githubHandleController,
@@ -76,15 +81,19 @@ class _EditPageState extends State<EditPage> {
               ),
               TextFormField(
                 decoration: const InputDecoration(
-                  icon: Icon(Icons.person),
+                  icon: Icon(Icons.person, size: 40,),
                   labelText: 'Bio',
+                    labelStyle: TextStyle(fontSize: 30)
                 ),
                 controller: bioController,
                 maxLines: 5,
                 minLines: 3,
 
               ),
-              ElevatedButton(onPressed: _goToMainPage, child: Text("Save"))
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: ElevatedButton(onPressed: _goToMainPage, child: Text("Save")),
+              )
 
             ],
           ),
