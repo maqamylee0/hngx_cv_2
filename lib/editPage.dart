@@ -45,47 +45,49 @@ class _EditPageState extends State<EditPage> {
       ),
       body: Container(
         padding: EdgeInsets.all(20),
-        child: Column(
-          children: [
-            TextFormField(
-              decoration: const InputDecoration(
-                icon: Icon(Icons.person),
-                labelText: 'Full Name',
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              TextFormField(
+                decoration: const InputDecoration(
+                  icon: Icon(Icons.person),
+                  labelText: 'Full Name',
+                ),
+                controller: nameController,
+
               ),
-              controller: nameController,
+              TextFormField(
+                decoration: const InputDecoration(
+                  icon: Icon(Icons.person),
+                  labelText: 'Slack Username',
+                ),
 
-            ),
-            TextFormField(
-              decoration: const InputDecoration(
-                icon: Icon(Icons.person),
-                labelText: 'Slack Username',
+                controller: slackUsernamerController,
+
               ),
+              TextFormField(
+                decoration: const InputDecoration(
+                  icon: Icon(Icons.person),
+                  labelText: 'Github handle',
+                ),
 
-              controller: slackUsernamerController,
+                controller: githubHandleController,
 
-            ),
-            TextFormField(
-              decoration: const InputDecoration(
-                icon: Icon(Icons.person),
-                labelText: 'Github handle',
               ),
+              TextFormField(
+                decoration: const InputDecoration(
+                  icon: Icon(Icons.person),
+                  labelText: 'Bio',
+                ),
+                controller: bioController,
+                maxLines: 5,
+                minLines: 3,
 
-              controller: githubHandleController,
-
-            ),
-            TextFormField(
-              decoration: const InputDecoration(
-                icon: Icon(Icons.person),
-                labelText: 'Bio',
               ),
-              controller: bioController,
-              maxLines: 5,
-              minLines: 3,
+              ElevatedButton(onPressed: _goToMainPage, child: Text("Save"))
 
-            ),
-            ElevatedButton(onPressed: _goToMainPage, child: Text("Save"))
-
-          ],
+            ],
+          ),
         ),
 
       ),
