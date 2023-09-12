@@ -76,24 +76,58 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("My CV"),
       ),
       body: Container(
+        padding: EdgeInsets.all(20),
+        child: Row(
+          children: [
+            VerticalDivider(
+              indent: 3,
+              thickness: 2,
+              width: 4,
+              color: Colors.purple,
+              endIndent: 3,
+            ),
+            SizedBox(width: 20,),
+            Expanded(
 
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-             Text(
-              "${widget.name}",
-            ),
-            Text(
-              '${widget.slack_username}',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-            Text(
-              '${widget.github_handle}',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-            Text(
-              '${widget.bio}',
-              style: Theme.of(context).textTheme.headlineMedium,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+
+                  Row(
+                    children: [
+                      Icon(Icons.circle, size: 12, color: Colors.purple,),
+                      SizedBox(width: 20,),
+                      Text("Personal Information",
+                        style: TextStyle(color: Colors.purple, fontSize: 25, ),),
+                    ],
+                  ),
+                   Padding(
+                     padding: const EdgeInsets.all(8.0),
+                     child: Text(
+                      "${widget.name}",
+                         style: Theme.of(context).textTheme.headlineSmall
+                  ),
+                   ),
+                  Row(
+                    children: [
+                      Text("Slack: ", style: TextStyle(color: Colors.purple),),
+                      Text(
+                        '${widget.slack_username}',
+                        style: Theme.of(context).textTheme.headlineMedium,
+                      ),
+                    ],
+                  ),
+                  Text(
+                    '${widget.github_handle}',
+                    style: Theme.of(context).textTheme.headlineMedium,
+                  ),
+                  Text(
+                    '${widget.bio}',
+                    style: Theme.of(context).textTheme.headlineMedium,
+                  ),
+                ],
+              ),
             ),
           ],
         ),
