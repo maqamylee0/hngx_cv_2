@@ -11,6 +11,8 @@ Requirements:
 - Slack username
 - GitHub handle
 - A brief personal bio
+
+
 ### Home/First Page (CV View):
 This will be the initial screen users encounter upon opening the app.
 It will come pre-filled with your aforementioned details.
@@ -23,8 +25,11 @@ After making changes to the CV details, returning to the home/first page should 
 Ensure the app updates dynamically without requiring manual refresh.
 
 
-<img src="https://github.com/maqamylee0/hngx_1_slack_profile/assets/57020210/9574bd3d-bed7-48f4-be81-265d25d42bbf" width=300 height=50%>
-<img src="https://github.com/maqamylee0/hngx_slack_profile_1/assets/57020210/4ac6e489-202b-4546-9d6d-cc40d6b488ee" width=300 height=50%>
+<img src="https://github.com/maqamylee0/hngx_cv_2/assets/57020210/9025bbc0-ef42-473a-b19c-96b24697a962" width=200 height=50%>
+<img src="https://github.com/maqamylee0/hngx_cv_2/assets/57020210/27798f1a-7b59-4166-af45-8c5b434fa024" width=200 height=50%>
+<img src="https://github.com/maqamylee0/hngx_cv_2/assets/57020210/f52ea88a-4a3f-4d97-8b01-7b9a646a5edd" width=200 height=50%>
+<img src="https://github.com/maqamylee0/hngx_cv_2/assets/57020210/fd3669dd-bbeb-466e-b389-ed810263fdf5" width=200 height=50%>
+
 
 ## To get started
 1. Clone the app
@@ -38,5 +43,5 @@ flutter run
 ```
 Link to appetize app
 ```
-https://appetize.io/app/fdflscodmpu5myujr3ds6g5cfu?device=pixel7&osVersion=13.0&scale=75&proxy=intercept
+https://appetize.io/app/kqe3etztz2rxnjso762da2mtli?device=pixel7&osVersion=13.0&scale=75
 ```
