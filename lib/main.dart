@@ -95,146 +95,150 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
               height: MediaQuery.of(context).size.height,
               width:  MediaQuery.of(context).size.width * 0.7,
-              child: Expanded(
-                child: SingleChildScrollView(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Row(
-                        children: [
-                          Icon(
-                            Icons.circle,
-                            size: 15,
-                            color: Colors.purple,
+              child: Column(
+                children: [
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.circle,
+                                size: 15,
+                                color: Colors.purple,
+                              ),
+                              SizedBox(
+                                width: 20,
+                              ),
+                              Text(
+                                "Personal Information",
+                                style: TextStyle(
+                                  color: Colors.purple,
+                                  fontSize: 25,
+                                ),
+                              ),
+                            ],
                           ),
-                          SizedBox(
-                            width: 20,
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.circle,
+                                      size: 12,
+                                      color: Colors.purple,
+                                    ),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    Text("Full Name",
+                                        style:
+                                            Theme.of(context).textTheme.headlineSmall)
+                                  ],
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.fromLTRB(30, 10, 10, 10),
+                                  child: Text("${widget.name}",
+                                      style: Theme.of(context).textTheme.titleLarge),
+                                )
+                              ],
+                            ),
                           ),
-                          Text(
-                            "Personal Information",
-                            style: TextStyle(
-                              color: Colors.purple,
-                              fontSize: 25,
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.circle,
+                                      size: 12,
+                                      color: Colors.purple,
+                                    ),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    Text("Slack Username",
+                                        style:
+                                        Theme.of(context).textTheme.headlineSmall)
+                                  ],
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.fromLTRB(30, 10, 10, 10),
+                                  child: Text("${widget.slack_username}",
+                                      style: Theme.of(context).textTheme.titleLarge),
+                                )
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.circle,
+                                      size: 12,
+                                      color: Colors.purple,
+                                    ),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    Text("Github handle",
+                                        style:
+                                        Theme.of(context).textTheme.headlineSmall)
+                                  ],
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.fromLTRB(30, 10, 10, 10),
+                                  child: Text("${widget.github_handle}",
+                                      style: Theme.of(context).textTheme.titleLarge),
+                                )
+                              ],
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.circle,
+                                      size: 12,
+                                      color: Colors.purple,
+                                    ),
+                                    SizedBox(
+                                      width: 20,
+                                    ),
+                                    Text("Bio",
+                                        style:
+                                        Theme.of(context).textTheme.headlineSmall)
+                                  ],
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.fromLTRB(30, 10, 10, 10),
+                                  child: Text("${widget.bio}",
+                                      style: Theme.of(context).textTheme.titleLarge),
+                                )
+                              ],
                             ),
                           ),
                         ],
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.circle,
-                                  size: 12,
-                                  color: Colors.purple,
-                                ),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                Text("Full Name",
-                                    style:
-                                        Theme.of(context).textTheme.headlineSmall)
-                              ],
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.fromLTRB(30, 10, 10, 10),
-                              child: Text("${widget.name}",
-                                  style: Theme.of(context).textTheme.titleLarge),
-                            )
-                          ],
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.circle,
-                                  size: 12,
-                                  color: Colors.purple,
-                                ),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                Text("Slack Username",
-                                    style:
-                                    Theme.of(context).textTheme.headlineSmall)
-                              ],
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.fromLTRB(30, 10, 10, 10),
-                              child: Text("${widget.slack_username}",
-                                  style: Theme.of(context).textTheme.titleLarge),
-                            )
-                          ],
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.circle,
-                                  size: 12,
-                                  color: Colors.purple,
-                                ),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                Text("Github handle",
-                                    style:
-                                    Theme.of(context).textTheme.headlineSmall)
-                              ],
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.fromLTRB(30, 10, 10, 10),
-                              child: Text("${widget.github_handle}",
-                                  style: Theme.of(context).textTheme.titleLarge),
-                            )
-                          ],
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.circle,
-                                  size: 12,
-                                  color: Colors.purple,
-                                ),
-                                SizedBox(
-                                  width: 20,
-                                ),
-                                Text("Bio",
-                                    style:
-                                    Theme.of(context).textTheme.headlineSmall)
-                              ],
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.fromLTRB(30, 10, 10, 10),
-                              child: Text("${widget.bio}",
-                                  style: Theme.of(context).textTheme.titleLarge),
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
-                ),
+                ],
               ),
             ),
           ],
